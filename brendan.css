@@ -20,7 +20,7 @@
       cursor: pointer;
       font-size: 15px;
       margin: 0;
-      padding: 4px 10px; }
+      padding: 6px 10px; }
     .filter-list .filter-panel.first form#filtermenu ul li.f_option {
       background-color: #f1f9f8; }
     .filter-list .filter-panel.first form#filtermenu ul li.f_option:nth-child(2) {
@@ -42,19 +42,19 @@
     vertical-align: middle;
     float: right;
     /* padding-right: 12px; */
-    -webkit-transform: rotate(180deg);
-    -moz-transform: rotate(180deg);
-    -ms-transform: rotate(180deg);
-    -o-transform: rotate(180deg);
-    transform: rotate(180deg);
-    transition: top 0.1s;
-    transition: transform 0.1s; }
-  .filter-list .filter-panel.first form#filtermenu ul li.category-label.zip:after {
     -webkit-transform: rotate(90deg);
     -moz-transform: rotate(90deg);
     -ms-transform: rotate(90deg);
     -o-transform: rotate(90deg);
-    transform: rotate(90deg); }
+    transform: rotate(90deg);
+    transition: top 0.1s;
+    transition: transform 0.1s; }
+  .filter-list .filter-panel.first form#filtermenu ul li.category-label.zip:after {
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+    transform: rotate(-90deg); }
 
 .twelve.content .twelve.columns:nth-child(2) {
   position: relative;
