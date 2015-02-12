@@ -4,11 +4,12 @@
   width: 190px; }
 
 .filter-list .filter-panel.first {
-  padding: 20px 0px 0px;
+  padding: 15px 0px 0px;
   background-color: #dff1ef; }
   .filter-list .filter-panel.first form#filtermenu ul {
     padding: 0;
-    margin: 0; }
+    margin: 0;
+    border-bottom: 1px solid #ccdfdc; }
     .filter-list .filter-panel.first form#filtermenu ul li {
       padding: 0px 10px; }
       .filter-list .filter-panel.first form#filtermenu ul li input {
@@ -24,7 +25,9 @@
     .filter-list .filter-panel.first form#filtermenu ul li.f_option {
       background-color: #f1f9f8; }
     .filter-list .filter-panel.first form#filtermenu ul li.f_option:nth-child(2) {
-      padding-top: 5px; }
+      padding-top: 10px; }
+    .filter-list .filter-panel.first form#filtermenu ul li.f_option:last-child {
+      padding-bottom: 10px; }
   .filter-list .filter-panel.first form#filtermenu ul:nth-child(1) li.f_option {
     display: none; }
   .filter-list .filter-panel.first form#filtermenu ul:nth-child(n+3) li.f_option {
