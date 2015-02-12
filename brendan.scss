@@ -1,0 +1,228 @@
+// Added Styles
+/////////////////////////////////////////
+.products-list {
+  .product .panel {
+    border: none;
+  }
+  .product-image-container a img {
+    width: 190px;
+  }
+}
+
+// Menu styles
+.filter-list .filter-panel.first {
+  padding: 20px 0px 0px;
+  background-color: darken(#f1f9f8, 5%);
+
+  form#filtermenu ul {
+    padding: 0;
+    margin: 0;
+
+    li {
+      padding: 0px 10px;
+      input {
+        margin-left: 0px;
+      }
+    }
+
+    li.category-label {
+      background: none;
+      position: relative;
+      cursor: hand;
+      cursor: pointer;
+      font-size: 15px;
+      margin: 0;
+      padding: 4px 10px;
+//      background-color: darken(#f1f9f8, 5%);
+    }
+    li.f_option {
+      background-color: #f1f9f8;
+    }
+    li.f_option:nth-child(2) {
+      padding-top: 5px;
+    }
+  }
+  form#filtermenu {
+    ul:nth-child(1) li.f_option {
+      display:none;
+    }
+    ul:nth-child(n+3) li.f_option {
+      display:none;
+    }
+  }
+  form#filtermenu ul li.category-label:after {
+    right: 15px;
+    top: 12px;
+    content: "";
+    position: absolute;
+    display: inline-block;
+    border-left: 6px solid #5F969B;
+    border-top: 6px dashed transparent;
+    border-bottom: 6px dashed transparent;
+    display: inline-block;
+    vertical-align: middle;
+    float: right;
+    /* padding-right: 12px; */
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    transform: rotate(180deg);
+    transition: top 0.1s;
+    transition: transform 0.1s;
+  }
+  form#filtermenu ul li.category-label.zip:after {
+    //  background: url(http://cdn.sunglasswarehouse.com/skin/sunglass_warehouse/images/layout/icon-filter-down-arrow.gif) 0 0 repeat;
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    transform: rotate(90deg);
+
+  }
+} // End .filter-panel.first
+/////////////////////////////////////////////
+
+.twelve.content .twelve.columns:nth-child(2) {
+  position: relative;
+  padding:0;
+  padding-top: 10px;
+  padding-left:10px;
+  background-size: cover;
+  background: url(http://www.readers.com/blog/wp-content/uploads/2015/02/SW-WC-PO.jpg);
+  background-position: bottom right;
+  background-repeat: no-repeat;
+  height: 164px;
+  h1 {
+    margin-top:0;
+    position: relative;
+    color: #272D4F;
+  }
+  .subcategory-descr {
+    color:#272D4F;
+    max-width:380px;
+    p {
+      font-size: 14px;
+    }
+  }
+}
+.no-padding {
+  padding:0!important;
+}
+.header-cta-container {
+  margin:10px 0!important;
+  padding: 0;
+  .cta {
+    .button {
+      width: 100%;
+      text-align: center;
+      padding: 12px;
+      color: white;
+      background: #5F969B;
+      background: linear-gradient(to bottom, #5F969B, darken(#5F969B, 8%));
+      border: 1px solid #9dc0c3;
+      span {
+        color: white;
+        font-weight: lighter;
+        -webkit-transition: padding 0.1s;
+        -moz-transition: padding 0.1s;
+        -ms-transition: padding 0.1s;
+        -o-transition: padding 0.1s;
+        transition: padding 0.1s;
+      }
+      .for-mobile {
+        display: inline-block;
+      }
+    }
+    .button:hover {
+      background-image: linear-gradient(to bottom, lighten(#5F969B, 10%), #5F969B);
+      span {
+        color: white;
+        padding-left:5px;
+        font-weight: bold;
+      }
+    }
+    .hover-activate {
+      cursor: default;
+      background-image: linear-gradient(to bottom, lighten(#5F969B, 10%), #5F969B);
+      span {
+        color: white;
+        padding-left:5px;
+        font-weight: bold;
+      }
+    }
+  }
+  .cta:first-child {
+    padding-left:0;
+  }
+  .cta:last-child {
+    padding-right: 0;
+  }
+}
+
+@media only screen and (max-width: 910px) {
+  .twelve.content .twelve.columns:nth-child(2) {
+    background: url(http://www.readers.com/blog/wp-content/uploads/2015/02/SW-WC-PO-748.jpg);
+    height: 127px;
+  }
+}
+@media only screen and (max-width: 768px) {
+
+  .twelve.content .twelve.columns:nth-child(2) {
+    background: url(http://www.readers.com/blog/wp-content/uploads/2015/02/SW-WC-PO-748.jpg);
+    height: 127px;
+    h1 {
+      letter-spacing: -1.5px;
+      font-size:2.5em;
+    }
+  }
+  .header-cta-container {
+    .cta.for-mobile {
+      display: block;
+      width: 100%;
+      text-align: left;
+      padding: 0;
+      .button {
+        border-top:0;
+        border-right:0;
+        border-left:0;
+        padding-left: 20px;
+        text-align: left;
+        .triangle {
+          display: inline-block;
+          border-left: 6px solid #fff;
+          border-top: 6px dashed transparent;
+          border-bottom: 6px dashed transparent;
+          display: inline-block;
+          vertical-align: middle;
+          float: right;
+          padding-right: 12px;
+        }
+        .not-for-mobile {
+          display: none;
+        }
+      }
+    }
+  }
+
+}
+
+@media only screen and (max-width: 600px) {
+
+  .twelve.content .twelve.columns:nth-child(2) {
+    background: none;
+    height:auto;
+    h1 {
+      font-size: 1.75em;
+    }
+  }
+  .m-buttons {
+    display: none;
+  }
+
+  .products-list {
+    .product-image-container a img {
+      width: auto;
+    }
+  }
+}

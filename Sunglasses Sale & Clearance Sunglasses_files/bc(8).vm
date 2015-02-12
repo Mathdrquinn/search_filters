@@ -1,0 +1,3 @@
+window.pageViewer.check(1,1);
+window.pageViewer.update('0.0372394488658756', 'http://cdn.sunglasswarehouse.com/skin/sunglass_warehouse/images/sw_bold_chat_tab.png', null);
+window.pageViewer.update('0.3589992132037878', 'available', '0.153234580764547');
